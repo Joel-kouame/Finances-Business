@@ -8,10 +8,6 @@ a {
     text-decoration: none;
     color: black;
 }
-ul{ 
-    display: flex;
-    flex-wrap: wrap;
-}
 button{
     color: white;
     height: 35px;
@@ -38,69 +34,44 @@ p{
     padding: 100px 15%;
 }
 
-/* header1 */
-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.header1 {
-    display: flex;
-    background-color: #A4C639;
-    color: white;
-    height: 38px;
-    align-items: center;
-}
-.header1 section span {
-    font-size: 1em;
-    padding: 0px 10px;
-}
-/* herder 2 */
-.header2 {
-    background-color: transparent;
-    padding: 0px 13%;
-    background-image: url(../IMG/slide_02.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 680px;
-}
+/* herder */
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 25px 0px;
-    margin-left: 30px;
+    background: #A4C639;
+    padding-left: 14%;
+    padding-right: 14%;
 }
-nav ul li {
-    list-style-type: none;
-    margin-left: 25px;
-    padding: 10px;
+.port{
+    font-size: 1.23em;
+    font-weight: bold;
 }
-.home{
-    color: #A4C639;
-    border-bottom: 3px solid #A4C639;
+.active{
+    border-bottom: 2px solid white;
 }
-.maison{
-    color: #A4C639;
+.nav-link{
+    color: white;
+    font-size: 0.89em;
+    margin-left: 20px;
 }
-nav ul li a:hover{
-    color: #A4C639;
+.nav-link:hover{
+    color: #a09b9b;
+    border-bottom: 2px solid white;
 }
-nav ul li:hover{
-    border-bottom: 3px solid #A4C639;
-}
-nav a{
-    color: #f6f6ff;
-    font-size: 0.9em;
-    font-weight: lighter;
+/* carousel */
+.carousel-item img{
+    width: 100%;
+    height: 650px;
 }
 .acroche{
-    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.h2{
+    color: #A4C639;
 }
 .acroche h2{
-    color: #A4C639;
     font-weight: bolder;
     font-size: 1.32em;
 }
@@ -113,7 +84,6 @@ nav a{
     letter-spacing: 2px;
 }
 .acroche p{
-    width: 500px;
     color: white;
     margin-bottom: 30px;
     line-height: 1.8;
@@ -130,28 +100,25 @@ nav a{
     border-radius: 17px;
     padding: 10px 20px;
 }
-/* container */
-.container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-}
 /* boite1 */
 .boite1{
-    height: auto;
+    background-color: #A4C639;
+}
+.bboite1{
     color: white;
     display: flex;
     justify-content: space-between;
     background-color: #A4C639;
     align-items: center;
-}
-.boite1 section{
     padding: 40px 0px;
 }
-.boite1 section h4 {
+.bboite1 section h4 {
     font-size: 1.08em;
     padding-bottom: 10px;
+}
+.bboite1 button:hover{
+    background-color: white;
+    color: #A4C639;
 }
 /* boite2 */
 .boite2{
@@ -177,44 +144,45 @@ nav a{
 }
 .service aside {
     width: 31.5%;
-    height: auto
+    background-color: #F1F0EF;
 }
 aside .digital{
     width: 100%;
-    height: 230px;
+    height: auto;
 }
 aside .digital img{
     width: 100%;
 }
 aside .services{
     padding: 30px;
-    background-color: #F1F0EF;
     text-align: left;
 }
-.btn{
+.services h3{
+    font-size: 1.3em;
+}
+.service .btn{
     color: white;
     background-color: #A4C639;
-    height: 42px;
     border: none;
     border-radius: 50px;
-    font-size: 0.8em;
     padding: 0px 30px;
 }
 /* boite 3 */
 .boite3{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 650px;
+    flex-direction: column;
     background-image: url(../IMG/fun-facts-bg.jpg);
     background-size: cover;
+    background-position: center;
 }
-.boite3 section{
+.soltn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.soltn section{
     width: 45%;
     color: white;
-}
-.boite3 p{
-    margin: 35px 0px;
 }
 .solution{
     display: flex;
@@ -227,23 +195,31 @@ aside .services{
     align-items: center;
     justify-content: center;
     width: 47%;
-    height: 150px;
     background-color: #39393996;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.solution aside h3{
+    font-size: 1.4em;
 }
 /* boite 4 */
-.boite4 section{
+.adddddddd{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #F1F0EF;
+}
+.adddddddd section{
     width: 50%;
 }
 section img{
     width: 100%;
 }
 .info{
-    padding: 35px 35px 50px 50px;
-    background-color: #F1F0EF;
+    padding: 15px 20px 10px 50px;
 }
 .info p{
-    margin: 40px 0px;
+    margin: 10px 0px;
 }
 /* boite 5 */
 .boite5{
@@ -251,11 +227,10 @@ section img{
     justify-content: center;
     flex-direction: column;
     background-color: #F1F0EF;
-    height: 700px;
-    padding: 0px 15%;
+    padding: 100px 15%;
 }
 .boite5 section{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -308,13 +283,11 @@ form .env{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 18%;
-    height: 200px;
+    padding: 50px 15%;
     background-color: #F1F0EF;
 }
 .boite7 section {
-    width: 156px;
-    height: 45px;
+    width: 20%;
 }
 /* footer */
 footer{
@@ -323,9 +296,6 @@ footer{
     padding: 100px 15%;
     color: white;
     background-color: #232323;
-}
-.foot{
-    
 }
 footer a {
     color: white;
@@ -350,6 +320,9 @@ footer section ul li {
 .menu-list {
     display: block;
 }
+.menu-list a:hover {
+    color: #a09b9b;
+}
 .footer-form{
     display: block;
     flex-wrap: wrap;
@@ -373,4 +346,191 @@ footer section ul li {
     color: white;
     background: #343434;
     padding: 30px 0px;
+}
+@media screen and (max-width: 600px){
+    .finance{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom: 8px;
+    }
+    .Sous-titre{
+        font-size: 0.62em;
+    }
+    .port{
+        font-size: 0.76em;
+    }
+    .acroche h2{
+        font-size: 1em;
+    }
+    .carousel-item img{
+        height: 280px;
+    }
+    /* boite1 */
+    .bboite1{
+        display: block;
+        align-items: center;
+    }
+    .bboite1 section h4{
+        font-size: 0.95em;
+    }
+    .bboite1 section span{
+        font-size: 0.8em;
+    }
+    .bboite1 button{
+        margin-top: 20px;
+    }
+    /* boite 2 */
+    .service{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service aside{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* boite 3 */
+    .soltn{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .boite3 section{
+        width: 100%;
+        height: auto;
+    }
+    .boite3 section p{
+        margin: 10px 0px 10px 0px;
+    }
+    .solution aside{
+        text-align: center;
+    }
+    .solution aside h3{
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    /* boite 4 */
+    .adddddddd{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: justify;
+    }
+    .adddddddd section{
+        width: 100%;
+    }
+    .adddddddd .info{
+        padding: 20px;
+    }
+    /* boite 5 */
+    .boite5 section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .boite5 section aside{
+        margin-top: 20px;
+        width: 100%;
+    }
+    /* boite6 */
+    .boite6 form{
+        margin-top: 50px;
+        padding: 20px 15px 30px 15px;
+    }
+    .boite6 form input{
+        width: 100%;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+    .boite6 form .message{
+        margin-top: 0px;
+        height: 100px;
+    }
+    .boite6 form .env{
+        width: 150px;
+    }
+    footer{
+        display: block;
+        flex-direction: column;
+    }
+    footer section{
+        width: 100%;
+    }
+    footer section h3{
+        text-align: center;
+    }
+    footer h3{
+        font-size: 1.3em;
+    }
+    footer a {
+        font-size: 0.8em;
+    }
+}
+@media screen and (min-width: 601px)and (max-width: 1000px){
+    .finance{
+        font-size: 1.7em;
+        font-weight: bold;
+        padding-bottom: 8px;
+    }
+    .Sous-titre{
+        font-size: 0.7em;
+    }
+    .nav-link{
+        font-size: 0.6em;
+        margin-left: 10px;
+    }
+    .bboite1{
+        display: block;
+        align-items: center;
+    }
+    .bboite1 button{
+        margin-top: 20px;
+    }
+    .service{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .service aside{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .service aside section{
+        width: 50%;
+    }
+    .service aside .services h3{
+        font-size: 0.99em;
+    }
+    .service aside .services p{
+        font-size: 0.6em;
+        margin: 13px 0px;
+    }
+    .service aside .btn{
+        font-size: 0.47em;
+        padding: 5px 10px;
+        height: auto;
+    }
+    .soltn{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .soltn aside h3{
+        font-size: 0.89em;
+    }
+    .adddddddd{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: justify;
+    }
+    .adddddddd section{
+        width: 100%;
+    }
+    .adddddddd .info{
+        padding: 20px;
+    }
+    footer h3{
+        font-size: 1.09em;
+    }
+    footer a {
+        font-size: 0.94em;
+    }
 }
